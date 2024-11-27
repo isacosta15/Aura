@@ -1,0 +1,521 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Urbanist', Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #E7E7E7;
+    color: #333;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #422B0D;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 1rem 0;
+}
+
+
+/* Header */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #9cbf88;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #9cbf88;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rem 1rem 5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.hero .content {
+    max-width: 50%;
+    text-align: left;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero h1 span {
+    color: #9cbf88;
+    display: inline-block;
+    position: relative;
+}
+
+.hero h1 span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #9cbf88;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.hero .buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero .button {
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero .button:first-child {
+    background-color: #fff;
+    color: #9cbf88;
+    border: 2px solid #9cbf88;
+}
+
+.hero .button:first-child:hover {
+    background-color: #f2f8ef;
+}
+
+.hero .button.secondary {
+    background-color: #9cbf88;
+    color: #fff;
+    border: none;
+}
+
+.hero .button.secondary:hover {
+    background-color: #7ba965;
+}
+
+.hero .hero-image img {
+    max-width: 90%;
+    border-radius: 50px;
+}
+
+/* Info Section */
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.info .text {
+    max-width: 50%;
+}
+
+.info .text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    line-height: 1.2;
+}
+
+.info .text h2 span {
+    color: #9cbf88;
+    display: inline-block;
+    position: relative;
+}
+
+.info .text h2 span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #9cbf88;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.info p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.info .image-placeholder img {
+        width: 300px;  
+        max-width: 300px;  
+        height: auto;  
+        border-radius: 100px;  
+    
+}
+
+/* Section Headers */
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.section-header h2 span {
+    color: #9cbf88;
+}
+
+/* Seção de Dados */
+.dados {
+    display: flex;
+    flex-direction: row; /* Organiza os itens horizontalmente (em linha) */
+    justify-content: space-between; /* Distribui os parágrafos de forma igual entre os espaços */
+    align-items: center; /* Centraliza o conteúdo verticalmente na seção */
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 1200px;
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+
+/* Centraliza o Título da Seção */
+.dados h2 {
+    font-size: 2.5rem;
+    color: #222;
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 100%;  /* Garante que o título ocupe toda a largura da seção */
+}
+
+.dados span {
+    position: relative;  /* Necessário para que a pseudo-classe funcione */
+}
+
+/* Linha abaixo do <span> */
+.dados span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;  /* Ajuste para que a linha fique logo abaixo do <span> */
+    width: 100%;
+    height: 5px;
+    background-color: #9cbf88;
+    border-radius: 5px;
+    z-index: -1;  /* Garante que a linha fique abaixo do texto */
+}
+
+/* Estilos para os parágrafos */
+.dados p {
+    width: 30%;  /* Define a largura dos parágrafos */
+    text-align: justify; /* Justifica o texto dos parágrafos */
+    position: relative;
+    padding: 1rem;
+}
+
+/* Linha vertical ao lado de cada parágrafo */
+.dados p:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 80px;
+    background-color: #454545;
+    left: -20px;
+}
+
+/* Estilos para o parágrafo com id "section1-text2" (o do meio) */
+#section1-text2 {
+    margin-top: 200px; /* Ajuste a distância para mover para baixo */
+}
+
+
+/* Solução */
+.solucao {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 1200px;
+    border-radius: 15px;
+}
+
+.solucao img {
+    max-width: 45%;
+    border-radius: 15px;
+}
+
+.solucao p {
+    flex: 1;
+    text-align: justify;
+}
+
+.solucao h2{
+    font-size: 2.5rem;
+    color: #222;
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 100%; 
+    display: inline-block;
+}
+
+.solucao span {
+    position: relative;  /* Necessário para que a pseudo-classe funcione */
+}
+
+/* Linha abaixo do <span> */
+.solucao span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;  /* Ajuste para que a linha fique logo abaixo do <span> */
+    width: 100%;
+    height: 5px;
+    background-color: #9cbf88;
+    border-radius: 5px;
+    z-index: -1;  /* Garante que a linha fique abaixo do texto */
+}
+
+/* Aurora */
+.aurora h2 {
+    font-size: 2.5rem;
+    color: #222;
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 100%; 
+    display: inline-block;
+}
+
+.aurora span {
+    position: relative;  /* Necessário para que a pseudo-classe funcione */
+}
+
+/* Linha abaixo do <span> */
+.aurora span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;  /* Ajuste para que a linha fique logo abaixo do <span> */
+    width: 100%;
+    height: 5px;
+    background-color: #9cbf88;
+    border-radius: 5px;
+    z-index: -1;  /* Garante que a linha fique abaixo do texto */
+}
+
+.aurora {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 1200px;
+}
+
+.aurora img {
+    max-width: 45%;
+    order: 2; /* Imagem à direita */
+    border-radius: 15px;
+}
+
+.aurora p {
+    flex: 1;
+    order: 1; /* Texto à esquerda */
+    text-align: justify;
+
+}
+
+/* Impacto */
+.impacto {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 1200px;
+    border-radius: 15px;
+}
+
+.impacto img {
+    max-width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.impacto span {
+    position: relative;  /* Necessário para que a pseudo-classe funcione */
+}
+
+/* Linha abaixo do <span> */
+.impacto span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;  /* Ajuste para que a linha fique logo abaixo do <span> */
+    width: 100%;
+    height: 5px;
+    background-color: #9cbf88;
+    border-radius: 5px;
+    z-index: -1;  /* Garante que a linha fique abaixo do texto */
+}
+#ods3{
+    margin-bottom: 100px;
+}
+#ods10 {
+    margin-top: 200px;
+}
+
+.impacto p {
+    flex: 1;
+    text-align: left;
+    margin-left: 1rem;
+    text-align: justify;
+}
+.impacto h2{
+    font-size: 2.5rem;
+    color: #222;
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 100%; 
+    display: inline-block;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .dados {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .solucao, .aurora, .impacto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .solucao img, .aurora img {
+        max-width: 100%;
+    }
+
+    .impacto img {
+        margin: 0 auto;
+    }
+
+    .impacto p {
+        text-align: center;
+        margin: 1rem 0;
+    }
+}
+
+
+/* Footer */
+/* Estilos para o rodapé */
+footer {
+    background-color: #eae3e3;
+    color: #9cbf88;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Estilo para os links do rodapé */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Estilos para os ícones sociais */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #000000;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #9cbf88; /* Cor ao passar o mouse sobre o ícone */
+}
