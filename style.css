@@ -452,17 +452,13 @@ header nav ul li a:hover {
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .dados {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    .solucao, .aurora, .impacto {
+    .solucao, .aurora, .impacto, .info, .dados {
         flex-direction: column;
         align-items: center;
     }
 
-    .solucao img, .aurora img {
+    .solucao img, .aurora img .info img {
         max-width: 100%;
     }
 
@@ -470,7 +466,7 @@ header nav ul li a:hover {
         margin: 0 auto;
     }
 
-    .impacto p {
+    .p {
         text-align: center;
         margin: 1rem 0;
     }
